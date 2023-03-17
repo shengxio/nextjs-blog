@@ -6,48 +6,44 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Welcome to my coffee stop</title>
+        <title>Roland's coffee space</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-        <i class="fa fa-coffee"></i>
       </Head>
 
       <main>
         <h1 className={styles.title}>
-          Read <Link href="/posts/first-post">this page!</Link>
+          Welcome to my space! 
         </h1>
 
         <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
+          Hello friend, would you like to have a cup of coffee?
+          <i class='fa fa-coffee'></i>
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
+          <Link href="/about"  className={styles.card}>
+            <h3>About &rarr;</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Here is everything you need to know about me.
             </p>
-          </a>
+          </Link>
+
+          <Link href="/projects" className={styles.card}>
+            <h3>Projects &rarr;</h3>
+            <p>Discover the projects that I am working on.</p>
+          </Link>
+
+          <Link href="/network" className={styles.card}>
+            <h3>Network &rarr;</h3>
+            <p>To hear about me from the people I have met in life.</p>
+          </Link>
+
+          <Link href="/contact" className={styles.card}>
+            <h3>Contact &rarr;</h3>
+            <p>
+              Here is everything you need to know about me.
+            </p>
+          </Link>
         </div>
       </main>
 
@@ -57,8 +53,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
+          Created by Sheng-Xiong Ding @2023
         </a>
       </footer>
 
