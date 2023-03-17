@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>Welcome to my coffee stop</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-        <i class="fa fa-coffee">
+        <i class="fa fa-coffee"></i>
       </Head>
 
       <main>
