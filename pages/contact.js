@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
-export default function Contact() {
+function Contact() {
     return (
         <div className={styles.container}>
             <h1 className={styles.title}>Contact</h1>
@@ -11,4 +11,6 @@ export default function Contact() {
             </h2>
         </div>
     );
-  }
+}
+
+export default Contact

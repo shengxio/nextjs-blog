@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
-export default function Network() {
+function Network() {
     return (
         <div className={styles.container}>
             <h1 className={styles.title}>Network</h1>
@@ -11,4 +11,6 @@ export default function Network() {
             </h2>
         </div>
     );
-  }
+}
+
+export default Network
