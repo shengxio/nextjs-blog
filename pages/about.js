@@ -3,12 +3,16 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import {Chrono} from "react-chrono";
 
+Chrono.defaultProps = {
+    cardHeight: 100,
+};
+
 const events = [
     {
         title:"now",
         cardTitle: 'FATHER | FOUNDER | FREE LANCER',
-        cardSubtitle:"I am currently working as a Data Engineer at a startup called Lanterns. ",
-        cardDetailedText:"I am also working on a few personal projects."
+        cardSubtitle:"I am currently working as the founder at my startup called Lanterns.",
+        cardDetailedText:"The purpose of the startup is to help kids to communicate with others and simulate an evironment of social interactions. I am also working on a few personal projects."
     },
     {
         title: '2022 August',
