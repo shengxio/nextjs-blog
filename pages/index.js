@@ -21,11 +21,9 @@ function Home() {
         </p>
 
         <div className={styles.grid}>
-          <Link href="/about"  className={styles.card}>
-            <h3>About &rarr;</h3>
-            <p>
-              Here is everything you need to know about me.
-            </p>
+          <Link href="/blog" className={styles.card}>
+            <h3>Blog &rarr;</h3>
+            <p>Read my blog posts.</p>
           </Link>
 
           <Link href="/projects" className={styles.card}>
@@ -38,12 +36,13 @@ function Home() {
             <p>To hear about me from the people I have met in life.</p>
           </Link>
 
-          <Link href="/contact" className={styles.card}>
-            <h3>Contact &rarr;</h3>
+          <Link href="/about"  className={styles.card}>
+            <h3>About&rarr;</h3>
             <p>
               Here is everything you need to know about me.
             </p>
           </Link>
+
         </div>
       </main>
 
