@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 import Chronicle from './components/chronicle.js';
-import {CustomBarChart,tendencyRadar,specificAspects} from './components/qualifications';
+// import {CustomBarChart,tendencyRadar,specificAspects} from './components/qualifications';
+import {tendencyRadar, CustomBarChart} from './components/qualifications';
+// import {CustomBarChart} from './components/qualifications';
 
 // const skills = new Skills({});
 const title = "About Me"
@@ -15,18 +17,12 @@ function About() {
                 <div  className={styles.card}>
                     {Chronicle()}
                 </div>
-                <div  className={styles.card}>
-                    {/* {skills.render()} */}
+                {/* <div  className={styles.card}>
                     {CustomBarChart()}
-                </div>
+                </div> */}
                 <div  className={styles.card}>
                     {tendencyRadar()}
                 </div>
-                <div className={styles.card}>
-                    <h3>Specifics</h3>
-                    {specificAspects()}
-                </div>
-
             </div>
 
             <h2>
