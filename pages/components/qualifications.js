@@ -81,151 +81,166 @@ const highLevel = [
   },
 ];
 
+// load qualifications data from qualifications.json
+const qualifications = require('./qualifications.json');
+
 const specific = [
   {
-    name: 'Python',
-    year: 2017,
-    type:'language',
-    proficiency: 1.0,
+    name:"programming",
+    children: [
+      {
+        name: 'Python',
+        size: 1600,
+      },
+      {
+        name: 'Visiual Basic',
+        size: 300,
+      },
+      {
+        name: 'SQL',
+        size: 150,
+      },
+      {
+        name: 'JavaScript',
+        size: 400,
+      },
+      {
+        name: 'HTML',
+        size: 600,
+      },
+      {
+        name: 'CSS',
+        size: 600,
+      }
+    ]
   },
   {
-    name: 'R',
-    year: 2021,
-    type:'language',
-    proficiency: 0.3,
+    name:"quantitative analytics",
+    children: [
+      {
+        name: 'statistics',
+        size: 500,
+      },
+      {
+        name: 'data visualization',
+        size: 500,
+      },
+      {
+        name: 'data ETL',
+        size: 500,
+      },
+      {
+        name: 'pandas',
+        size: 500,
+      },
+      {
+        name: 'numpy',
+        size: 100,
+      },
+    ]
   },
   {
-    name: 'SQL',
-    year: 2019,
-    type:'language',
-    proficiency: 0.5,
+    "name": "machine learning",
+    "children": [
+      {
+        "name": "scikit-learn",
+        "size": 250
+      },
+      {
+        "name": "tensorflow",
+        "size": 160
+      },
+      {
+        "name": "pytorch",
+        "size": 100
+      },
+    ]
   },
   {
-    name: 'JavaScript',
-    year: 2019,
-    type:'language',
-    proficiency: 0.8,
+    "name": "cloud platforms",
+    "children": [
+      {
+        "name": "AWS",
+        "size": 300
+      },
+      {
+        "name": "GCP",
+        "size": 150
+      },
+      {
+        "name": "Azure",
+        "size": 10
+      },
+      {
+        "name": "Docker",
+        "size": 100
+      }
+    ]
   },
   {
-    name: 'HTML',
-    year: 2009,
-    type:'language',
-    proficiency: 0.8,
+    "name": "operation systems",
+    "children": [
+      {
+        "name": "Linux",
+        "size": 300
+      },
+      {
+        "name": "Windows",
+        "size": 150
+      }
+    ]
   },
   {
-    name: 'CSS',
-    year: 2009,
-    type:'language',
-    proficiency: 0.8,
+    "name": "web development",
+    "children": [
+      {
+        "name": "React",
+        "size": 100
+      },
+      {
+        "name": "Django",
+        "size": 50
+      },
+      {
+        "name": "Flask",
+        "size": 160
+      },
+      {
+        "name": "Next.js",
+        "size": 100
+      },
+    ]
   },
   {
-    name: 'React',
-    year: 2019,
-    type:'framework',
-    proficiency: 0.6,
+    "name": "management",
+    "children": [
+      {
+        "name": "project management",
+        "size": 1600
+      },
+      {
+        "name": "product management",
+        "size": 1600
+      },
+      {
+        "name": "team management",
+        "size": 800
+      },
+    ]
   },
   {
-    name: 'Django',
-    year: 2021,
-    type:'framework',
-    proficiency: 0.3,
-  },
-  {
-    name: 'Flask',
-    year: 2021,
-    type:'framework',
-    proficiency: 0.5,
-  },
-  {
-    name: 'tensorflow',
-    year: 2021,
-    type:'framework',
-    proficiency: 0.7,
-  },
-  {
-    name: 'scikit-learn',
-    year: 2020,
-    type:'framework',
-    proficiency: 0.7,
-  },
-  {
-    name: 'pandas',
-    year: 2020,
-    type:'framework',
-    proficiency: 0.7,
-  },
-  {
-    name: 'numpy',
-    year: 2020,
-    type:'framework',
-    proficiency: 0.7,
-  },
-  {
-    name: 'AWS',
-    year: 2021,
-    type:'platform',
-    proficiency: 0.8,
-  },
-  {
-    name: 'GCP',
-    year: 2021,
-    type:'platform',
-    proficiency: 0.5,
-  },
-  {
-    name: 'Azure',
-    year: 2021,
-    type:'platform',
-    proficiency: 0.2,
-  },
-  {
-    name: 'Linux',
-    year: 2017,
-    type:'OS',
-    proficiency: 0.6,
-  },
-  {
-    name: 'Windows',
-    year: 2017,
-    type:'OS',
-    proficiency: 0.5,
-  },
-  {
-    name: 'pytorch',
-    year: 2023,
-    type:'framework',
-    proficiency: 0.3,
-  },
-  {
-    name: 'next.js',
-    year: 2023,
-    type:'framework',
-    proficiency: 0.3,
-  },
-  {
-    name: 'Docker',
-    year: 2021,
-    type:'platform',
-    proficiency: 0.2,
-  },
-  {
-    name: 'statistics',
-    year: 2015,
-    type:'method',
-    proficiency: 0.8,
-  },
-  {
-    name: 'data visualization',
-    year: 2015,
-    type:'method',
-    proficiency: 0.8,
-  },
-  {
-    name: 'data ETL',
-    year: 2015,
-    type:'method',
-    proficiency: 0.8,
-  },
+    "name": "business development",
+    "children": [
+      {
+        "name": "customer service",
+        "size": 900
+      },
+      {
+        "name": "business development",
+        "size": 100
+      },
+    ]
+  }
 ]
 
 const tendency = [
@@ -281,18 +296,17 @@ const tendencyRadar = () => (
 </RadarChart>
 )
 
-const specificAspects = () => (
-  <Treemap
-  width={730}
-  height={250}
-  data={specific}
-  dataKey="name"
-  dataValue="proficiency"
-  aspectRatio={4 / 3}
-  stroke="#fff"
-  fill="#8884d8"
-/>
-)
+// const specificAspects = () => (
+//   <Treemap
+//   width={730}
+//   height={250}
+//   data={qualifications}
+//   dataKey="name"
+//   aspectRatio={4 / 3}
+//   stroke="#fff"
+//   fill="#8884d8"
+// />
+// )
 
-// export default {CustomBarChart, tendencyRadar};
-module.exports = {CustomBarChart, tendencyRadar,specificAspects};
+export {CustomBarChart, tendencyRadar};
+// module.exports = {CustomBarChart, tendencyRadar,specificAspects};
