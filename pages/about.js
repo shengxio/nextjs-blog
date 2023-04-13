@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
-import Chronicle from './components/chronicle.js';
+import Chronicle from '../components/chronicle.js';
 // import {CustomBarChart,tendencyRadar,specificAspects} from './components/qualifications';
-import {tendencyRadar, CustomBarChart} from './components/qualifications';
+import {tendencyRadar, CustomBarChart} from '../components/qualifications.js';
 // import {CustomBarChart} from './components/qualifications';
 
 // const skills = new Skills({});
