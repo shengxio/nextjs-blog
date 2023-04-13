@@ -81,9 +81,6 @@ const highLevel = [
   },
 ];
 
-// load qualifications data from qualifications.json
-const qualifications = require('./qualifications.json');
-
 const specific = [
   {
     name:"programming",
