@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
-import Posts from './components/posts.js';
+import Posts from '../components/posts.js';
 
 const title = "Blog"
 
